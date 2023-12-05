@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radar Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>问题集合</h2>
+  <form id="quizForm">
+    <div>
+      <h1>医学知识测试</h1>
+
+  <h2>心肺复苏术</h2>
+  <p>1. 成人心肺复苏时胸外按压的深度为：</p>
+  <input type="radio" name="q1" value="A"> A. 4~5Cm<br>
+  <input type="radio" name="q1" value="B"> B. 大于5 Cm<br>
+  <input type="radio" name="q1" value="C"> C. 5~6Cm<br>
+  <input type="radio" name="q1" value="D"> D. 越深越好<br>
+
+  <p>2. 心肺复苏时胸外按压频率为：</p>
+  <input type="radio" name="q2" value="A"> A. 100~120次／分<br>
+  <input type="radio" name="q2" value="B"> B. 不低于100次／分<br>
+  <input type="radio" name="q2" value="C"> C. 80~100次／分<br>
+  <input type="radio" name="q2" value="D"> D. 60~100次／分<br>
+	
+  <p>3、成人徒手心肺复苏时按压与通气的比例为（）</p>
+  <input type="radio" name="q3" value="A">A. 15:2<br>
+  <input type="radio" name="q3" value="B">B. 30:2<br>
+  <input type="radio" name="q3" value="C">C. 15:1<br>
+  <input type="radio" name="q3" value="D">D. 持续按压，不用通气<br>
+	
+  <p>4、单人徒手心肺复苏时，最常用开放气道的方法是（）</p>
+   <input type="radio" name="q4" value="A">A. 仰头抬额法<br>
+   <input type="radio" name="q4" value="B">B. 插管型喉罩<br>
+   <input type="radio" name="q4" value="C">C. 托颌法<br>
+   <input type="radio" name="q4" value="D">D. 气管插管<br>
+
+  <h2>烧伤烫伤急救</h2>
+  <p>1、烧伤和烫伤重者晚期可能出现：</p>
+  <input type="radio" name="q5" value="A"> A. 感染、损伤皮肤<br>
+  <input type="radio" name="q5" value="B"> B. 败血症、坏疽<br>
+  <input type="radio" name="q5" value="C"> C. 渗出、危及生命<br>
+  <input type="radio" name="q5" value="D"> D. 以上都不对<br>
+
+  <p>2、烧烫伤急救五步：</p>
+  <input type="radio" name="q6" value="A"> A. 冲﹣脱﹣泡﹣盖﹣送<br>
+  <input type="radio" name="q6" value="B"> B. 泡﹣盖﹣送﹣冲﹣脱<br>
+  <input type="radio" name="q6" value="C"> C. 冲﹣泡﹣脱﹣盖﹣送<br>
+  <input type="radio" name="q6" value="D"> D. 泡﹣脱﹣冲﹣盖﹣送<br>
+  
+   <p>3、冲步骤中，将烧烫伤的部位用清洁的流动冷水轻轻冲或浸泡（）左右，冷水可将热迅速散去以降低对深部组织的伤害。</p>
+            <input type="radio" name="q7" value="A">A. 20-30分钟<br>
+            <input type="radio" name="q7" value="B">B. 10-30分钟<br>
+            <input type="radio" name="q7" value="C">C. 10-20分钟<br>
+            <input type="radio" name="q7" value="D">D. 20-40分钟<br>
+	<p>4、脱步骤中，在充分的冲洗和浸泡后，在（）中小心除去衣物。</p>
+            <input type="radio" name="q8" value="A">A. 热水<br>
+            <input type="radio" name="q8" value="B">B. 冷水<br>
+            <input type="radio" name="q8" value="C">C. 生理盐水<br>
+            <input type="radio" name="q8" value="D">D. 以上都对<br>
+
+  <h2>止血包扎急救</h2>
+  <p>1. 伤口有较多泥沙时，公众应该：</p>
+  <input type="radio" name="q9" value="A"> A. 用泡菜水冲洗<br>
+  <input type="radio" name="q9" value="B"> B. 用茶水冲洗<br>
+  <input type="radio" name="q9" value="C"> C. 用自来水冲洗<br>
+	
+  <p>2、骨折固定原则（）</p>
+            <input type="radio" name="q10" value="A">A. 不移动，不回纳<br>
+            <input type="radio" name="q10" value="B">B. 不移动，可回纳<br>
+            <input type="radio" name="q10" value="C">C. 可移动，不回纳<br>
+            <input type="radio" name="q10" value="D">D. 可移动，可回纳<br>
+	<p>3、下肢骨折时应该固定（）</p>
+            <input type="radio" name="q11" value="A">A. 骨折上端<br>
+            <input type="radio" name="q11" value="B">B. 骨折下端<br>
+            <input type="radio" name="q11" value="C">C. 骨折断端<br>
+            <input type="radio" name="q11" value="D">D. 骨折周围<br>
+	<p>4、骨折固定时，使用夹板宽度应选用（）</p>
+            <input type="radio" name="q12" value="A">A. 超躯体2倍<br>
+            <input type="radio" name="q12" value="B">B. 超躯体1倍<br>
+            <input type="radio" name="q12" value="C">C. 比躯体稍大<br>
+            <input type="radio" name="q12" value="D">D. 小于躯体<br>
+
+  <h2>溺水急救</h2>
+   <p>1、淹溺的进程很快，若抢救不及时多久会发生呼吸心跳停止（）</p>
+            <input type="radio" name="q13" value="A">A. 1-2分钟<br>
+            <input type="radio" name="q13" value="B">B. 3-5分钟<br>
+            <input type="radio" name="q13" value="C">C. 4-6分钟<br>
+            <input type="radio" name="q13" value="D">D. 6-9分钟<br>
+	
+	 <p>2、第一目击者救援正确的方法（））</p>
+            <input type="radio" name="q14" value="A">A. 非专业救生人员下水救援<br>
+            <input type="radio" name="q14" value="B">B. 多人手拉手下水救援<br>
+            <input type="radio" name="q14" value="C">C. 跳水时将头扎进水中<br>
+            <input type="radio" name="q14" value="D">D. 向遇溺者投递竹竿、衣物、绳索、漂浮物等<br>
+	<p>3、淹溺患者基础生命支持应遵循的顺序是（）</p>
+            <input type="radio" name="q15" value="A">A. 开放气道﹣人工通气﹣胸外按压﹣早期除颤<br>
+            <input type="radio" name="q15" value="B">B. 开放气道﹣胸外按压﹣人工通气﹣早期除颤<br>
+            <input type="radio" name="q15" value="C">C. 胸外按压﹣开放气道﹣人工通气﹣早期除颤<br>
+            <input type="radio" name="q15" value="D">D. 开放气道﹣人工通气﹣早期除颤﹣胸外按压<br>
+	<p>4、淹溺现场急救的关键是（）</p>
+            <input type="radio" name="q16" value="A">A. 胸外按压<br>
+            <input type="radio" name="q16" value="B">B. 早期除额<br>
+            <input type="radio" name="q16" value="C">C. 有效的人工通气<br>
+            <input type="radio" name="q16" value="D">D. 常规固定颈椎<br>
+    </div>
+    <button type="button" onclick="calculateScore()">提交答案</button>
+  </form>
+
+  <canvas id="radarChart"></canvas>
+
+  <script>
+    function calculateScore() {
+      var userAnswers = {
+    q1: document.querySelector('input[name="q1"]:checked').value,
+    q2: document.querySelector('input[name="q2"]:checked').value,
+	q3: document.querySelector('input[name="q3"]:checked').value,
+    q4: document.querySelector('input[name="q4"]:checked').value,	 
+	q5: document.querySelector('input[name="q5"]:checked').value,
+    q6: document.querySelector('input[name="q6"]:checked').value,
+	q7: document.querySelector('input[name="q7"]:checked').value,
+    q8: document.querySelector('input[name="q8"]:checked').value,
+	q9: document.querySelector('input[name="q9"]:checked').value,
+    q10: document.querySelector('input[name="q10"]:checked').value,
+	q11: document.querySelector('input[name="q11"]:checked').value,
+    q12: document.querySelector('input[name="q12"]:checked').value,
+	q13: document.querySelector('input[name="q13"]:checked').value,
+    q14: document.querySelector('input[name="q14"]:checked').value,
+	q15: document.querySelector('input[name="q15"]:checked').value,
+    q16: document.querySelector('input[name="q16"]:checked').value,
+ };
+		  
+	var score1 = (userAnswers.q1 === 'C' ? 1 : 0) + (userAnswers.q2 === 'A' ? 1 : 0) + (userAnswers.q3 === 'B' ? 1 : 0) + (userAnswers.q4 === 'A' ? 1 : 0);
+    var score2 = (userAnswers.q5 === 'D' ? 1 : 0) + (userAnswers.q6 === 'A' ? 1 : 0) + (userAnswers.q7 === 'B' ? 1 : 0) + (userAnswers.q8 === 'B' ? 1 : 0);
+	var score3 = (userAnswers.q9 === 'C' ? 1 : 0) + (userAnswers.q10 === 'A' ? 1 : 0) + (userAnswers.q11 === 'A' ? 1 : 0) + (userAnswers.q12 === 'C' ? 1 : 0);
+	var score4 = (userAnswers.q13 === 'C' ? 1 : 0) + (userAnswers.q14 === 'D' ? 1 : 0) + (userAnswers.q15 === 'A' ? 1 : 0) + (userAnswers.q16 === 'C' ? 1 : 0);
+
+      const ctx = document.getElementById('radarChart').getContext('2d');
+
+      const data = {
+        labels: ['心肺复苏术', '烧伤烫伤急救', '止血包扎急救', '溺水急救'],
+        datasets: [
+          {
+            label: '得分',
+            data: [score1, score2, score3, score4],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+          },
+        ],
+      };
+
+       const options = {
+        scale: {
+          ticks: {
+            beginAtZero: true,
+            min: 0,
+            max: 1, // 因为进行了归一化处理，最大值是1
+            stepSize: 0.25, // 刻度间隔
+            callback: function (value) {
+              return value * maxScore; // 将刻度值还原为实际得分值
+            },
+          },
+        },
+      };
+		
+      const radarChart = new Chart(ctx, {
+        type: 'radar',
+        data: data,
+        options: options,
+      });
+    }
+  </script>
+	<a href="index.html">返回首页</a>
+</body>
+</html>

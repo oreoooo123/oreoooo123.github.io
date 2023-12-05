@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>大学生体质指标测试</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    input[type="text"] {
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>大学生体质指标测试</h1>
+    <form id="testForm">
+      <label>身高（cm）：<input type="text" id="height"></label>
+      <label>体重（kg）：<input type="text" id="weight"></label>
+      <label>肺活量（ml）：<input type="text" id="vitalCapacity"></label>
+      <label>八百米跑（秒）：<input type="text" id="runningTime"></label>
+      <label>生病频率（次/年）：<input type="text" id="sicknessFrequency"></label>
+      <button type="button" onclick="calculateResult()">提交</button>
+		<a href="index.html">返回首页</a>
+    </form>
+    <div id="result"></div>
+  </div>
+  
+ <script>
+  function calculateResult() {
+    var height = parseFloat(document.getElementById('height').value);
+    var weight = parseFloat(document.getElementById('weight').value);
+    var vitalCapacity = parseFloat(document.getElementById('vitalCapacity').value);
+    var runningTime = parseFloat(document.getElementById('runningTime').value);
+    var sicknessFrequency = parseFloat(document.getElementById('sicknessFrequency').value);
+    
+    var bmi = weight / ((height / 100) ** 2); // Calculate BMI
+    
+    var result = "";
+    
+
+    if (
+      bmi >= 18.5 &&
+      bmi <= 23.9&&
+      vitalCapacity >= 3500 &&
+      runningTime <= 220 &&
+      sicknessFrequency <= 3
+    ) {
+      result = "优秀，继续保持";
+    } else if (
+      bmi < 18.5 &&
+      bmi > 23.9&&
+      vitalCapacity <= 3000 &&
+      runningTime <= 240 &&
+      sicknessFrequency <= 5
+    ) {
+      result = "良好，有待改善";
+    } else {
+      result = "一般，进步的空间很大，需要多加锻炼";
+    }
+    
+    document.getElementById('result').innerHTML = "体质指标结果：" + result;
+  }
+</script>
+</body>
+</html>
